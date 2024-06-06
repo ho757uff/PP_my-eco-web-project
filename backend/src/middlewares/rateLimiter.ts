@@ -11,9 +11,10 @@ export const rateLimiterMiddleware = (
   res: Response,
   next: NextFunction
 ) => {
-  const ip = req.ip || 'unknown-ip';  // Utilisation d'une valeur par défaut pour éviter l'erreur 'type undefined is not assignable to type string | number'
-  
-  rateLimiter.consume(ip)
+  const ip = req.ip || 'unknown-ip'; // Utilisation d'une valeur par défaut pour éviter l'erreur 'type undefined is not assignable to type string | number'
+
+  rateLimiter
+    .consume(ip)
     .then(() => {
       next();
     })
