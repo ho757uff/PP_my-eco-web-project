@@ -9,7 +9,7 @@ My Eco Web Project is a full-stack web application built with Node.js, Express, 
 - PostgreSQL (>= 12.x)
 
 ## Project Structure
-
+```
 my-eco-web-project/
 ├── frontend/
 │ ├── public/
@@ -36,7 +36,7 @@ my-eco-web-project/
 ├── .gitignore
 ├── README.md
 └── render.yaml
-
+```
 
 ## Getting Started
 
